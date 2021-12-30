@@ -1,0 +1,125 @@
+.post-detail-container {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "side-bar content content";
+  gap: 30px;
+}
+
+.post-detail-content {
+  grid-area: content;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.side-bar {
+  grid-area: side-bar;
+}
+
+.post-detail-header img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.post-detail-body {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.post-detail-info .post-title {
+  color: #434966;
+  font-size: 2.3em;
+  font-weight:900;
+  margin-bottom: 30px;
+}
+
+.post-title-input {
+  font-size: 2.3em;
+  font-weight:900;
+  margin-bottom: 30px;
+  color: #a7a8ae;
+  outline: none;
+  border: none;
+}
+
+.post-detail-info .category, .post-info{
+  margin: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post-info {
+  justify-content: space-between;
+}
+
+.post-detail-info .category .cat, 
+.post-detail-author, 
+.post-detail-date {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #434966;
+  margin-right: 10px;
+}
+
+.post-detail-body .post-content {
+  margin: 30px 0 0 0;
+  color: #434966;
+  font-size: 1.2em;
+}
+
+.post-content-input {
+  margin: 30px 0 0 0;
+  color: #9da0b1;
+  font-size: 1.2em;
+  outline: none;
+  border: none;
+  padding: 0;
+  resize: none;
+}
+
+.post-content-input:focus, .post-title-input:focus {
+  outline: none;
+}
+
+
+.post-detail-body .post-content p::first-letter {
+  margin-left: 20px;
+  /* font-size: 2em; */
+  /* font-family: 'Vidaloka', serif; */
+  /* font-weight: bolder; */
+}
+
+.editOpt .edit-opt{
+  font-size: 1.1em;
+  margin:10px 10px 0 0;
+  color: rgb(0, 124, 124);
+  cursor: pointer;
+}
+
+.editOpt .edit-opt:last-child {
+  color: rgb(208, 56, 56);
+}
+
+@media (max-width: 1025px) {
+  .post-detail-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+}
+
+.update-post {
+  background-color: #434966;
+  color: #fff;
+  padding: 5px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin-top: 20px;
+  align-self: flex-end;
+  border-radius: 10px;
+}

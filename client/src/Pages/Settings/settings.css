@@ -1,0 +1,102 @@
+.settings-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  margin-top: 30px;
+  border-radius: 10px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.settings-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  font-size: 1.1em;
+}
+
+.settings-btn {
+  background-color: #434966;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.settings-btn:hover {
+  transition: 0.1s all;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+}
+
+.settings-update-title {
+  font-weight: bolder;
+  color: #fff;
+}
+
+.settings-delete-title {
+  background-color: rgb(208, 56, 56);
+  color: #fff;
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.settings-form > label {
+  font-size: 1.4em;
+  color: #434966;
+  align-self: flex-start;
+}
+
+.setting-pp {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.settings-form .setting-pp img {
+  width: 120px;
+  height: 120px;
+  border-radius: 20px;
+  margin-right: 20px;
+}
+
+.pp-image-icon {
+  font-size: 2.5em;
+  color: #434966;
+}
+
+.settings-form > input {
+  color: #434966;
+  margin: 10px 0;
+  padding: 15px 10px;
+  font-size: 1.2em;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.settings-submit {
+  margin-top: 20px;
+  width: 150px;
+  padding: 15px 0;
+  font-size: 1.2em;
+  background-color: #434966;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+  align-self: center;
+}
+
+.settings-submit:hover {
+  transition: 0.1s all;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.1);
+  background-color: #666e94;
+}

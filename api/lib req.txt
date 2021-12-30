@@ -1,0 +1,5 @@
+
+Mongoose -> mongodb connection
+Express -> backed framework
+dotenv -> handle env variable
+multer -> to handle image upload

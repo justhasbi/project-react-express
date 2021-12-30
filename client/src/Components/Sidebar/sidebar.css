@@ -1,0 +1,89 @@
+/* SIDEBAR CSS*/
+.side-bar input{
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #fff;
+  color: #434966;
+  padding: 15px 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.side-bar input::placeholder {
+  color: #434966;
+}
+
+.blog-categories {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px 10px 30px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+.category-title {
+  color: #434966;
+  margin: 10px 0;
+  font-size: 1.3em;
+}
+
+.categories-link {
+  padding: 0;
+}
+
+.categories-link li {
+  font-size: .9em;
+  margin: 15px 0;
+}
+
+.categories-link hr {
+  border: .8px solid rgb(238, 238, 238);
+}
+
+.post {
+  margin: 10px 0;
+}
+
+.top-posts {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 20px 0;
+  padding: 20px 30px 20px 30px;
+  color: #434966;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+.top-posts .top-post-title {
+  margin: 10px 0 ;
+  font-size: 1.3em;
+}
+
+.post-title {
+  display: flex;
+  flex-direction: row;
+}
+
+.post-title .heading {
+  margin-left: 20px;
+  margin-bottom: 0;
+  font-size: 1em;
+}
+
+.post-tag .date-small{
+  margin-top: 8px;
+  display: flex;
+  font-size: .7em;
+  padding: 0;
+  color: #434966;
+  margin-left: 33px;
+}
+
+.post-tag .tag li {
+  margin-right: 10px;
+}
