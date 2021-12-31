@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './createpost.css'
-import headerImage from '../../img/heroimg.jpg'
+
 import { useState } from 'react'
 import axios from 'axios'
 import { useContext } from 'react'

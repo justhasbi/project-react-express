@@ -10,13 +10,15 @@ function Login() {
   const passwordRef = useRef()
   const { dispatch, isFetching } = useContext(Context)
 
+  console.log(passwordRef)
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     dispatch({
       type: "LOGIN_START"
     })
     try {
-      const res = await axios.post("/auth/login", {
+      const res = await axios.post("/auth/login/", {
         username: userRef.current.value,
         password: passwordRef.current.value
       })
@@ -24,6 +26,7 @@ function Login() {
         type: "LOGIN_SUCCESS",
         payload: res.data
       })
+      window.location.replace('/')
     } catch (error) {
       dispatch({
         type: "LOGIN_FAILURE",
@@ -52,7 +55,6 @@ function Login() {
             placeholder="Enter your password"
             ref={passwordRef}
           />
-
           <button className="login-button" type="submit" disabled={isFetching}>Login</button>
         </form>
         <div className="register-button-container">

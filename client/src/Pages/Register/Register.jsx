@@ -19,7 +19,7 @@ function Register() {
         password: data.password,
         birthdate: data.birthdate
       })
-      window.alert("Login Success")
+      window.alert("Register Success")
       postData.data && window.location.replace('/login')
       // console.log(postData.data)
     } catch (err) {

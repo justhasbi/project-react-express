@@ -43,8 +43,10 @@ function NavBar() {
           <li className="topListItem logout" onClick={handleLogout}>{user && "LOGOUT"}</li>
           <div className="user-action">
             {user ? (
-              <img className="topImg" src={user.profilePicture} alt="person" />
-            ) : (
+              <Link to="/settings">
+                <img className="topImg" src={user.profilePicture} alt="person" />
+              </Link>
+              ) : (
               <ul className="topList">
                 <li className="topListItem">
                   <Link className="link" to="/login">Login</Link>

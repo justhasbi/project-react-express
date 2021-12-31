@@ -34,15 +34,24 @@ function PostDetail() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`/posts/${id}`, { data: { username: user.username }})
+      await axios.delete(`/posts/${post._id}`, { data: { username: user.username }})
       window.location.replace('/')
     } catch (error) {
       console.log(error)
     }
   }
 
-  const handleUpdate = () => {
-
+  const handleUpdate = async () => {
+    try {
+      await axios.put(`/posts/${post._id}`, {
+        username: user.username,
+        title,
+        content
+      })
+      setUpdateMode(false)
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
@@ -66,7 +75,7 @@ function PostDetail() {
               updateMode ? (
                 <input type="text" value={title} className="post-title-input" onChange={(e) => setTitle(e.target.value)}/>
               ) : (
-                <span className="post-title">{post.title}</span>
+                <span className="post-title">{title}</span>
               )
             }
                 <div className="post-info">
@@ -89,10 +98,10 @@ function PostDetail() {
                 updateMode ? (
                   <textarea type="text" value={content} className="post-content-input" onChange={(e) => setContent(e.target.value)}/>
                 ) : (
-                  <p className="post-content">{post.content}</p>
+                  <p className="post-content">{content}</p>
                 )
               }
-              <button className="update-post">Update</button>
+              <button className="update-post" onClick={handleUpdate}>Update</button>
             </div>
           </div>
           <Sidebar />
